@@ -268,6 +268,7 @@ select {
 
 .title-presentation {
   font-size: 2rem;
+  margin-bottom: 1rem;
   color: var(--color-ligth-blue);
   font-family: "Sedan SC Regular";
 }
@@ -395,39 +396,55 @@ select {
 
 .section-asesoramiento {
   margin-bottom: 3rem;
-  padding: 2rem;
-  position: relative;
-}
-
-.section-asesoramiento::before {
-  content: " ";
-  height: 100%;
-  position: absolute;
-  top: 0;
-  width: 15px;
-}
-
-.section-asesoramiento::before {
-  box-shadow: 0px 0px 12px 4px #00000040;
-  position: absolute;
 }
 
 .shadow {
-  /* box-shadow: 0px 0px 12px 4px #00000040;
-  clip-path: inset(-15px 0px -15px 0px); */
+  box-shadow: 0px 0px 12px 4px #00000040;
+  clip-path: inset(-15px 0px 20px 20%);
+  display: block;
+  padding-top: 2rem;
+}
 
-  /* box-shadow: 0px 0px 12px 4px #00000040, 0px 0px 12px 4px #00000040;
-
-  display: block; */
+.shadow-2 {
+  box-shadow: 0px 0px 12px 4px #00000040;
+  clip-path: inset(-15px 0px 20px 20%);
+  display: block;
+  padding-bottom: 2rem;
 }
 
 .asesoramiento-wrapper {
   width: min(100% - 2rem, 1440px);
   margin-inline: auto;
+  position: relative;
+}
+
+.separator {
+  position: absolute;
+  left: 49.5%;
+  transform: translate(-30%, -7.5%);
+
+  height: 118%;
+
+  box-shadow: -12px 1px 4px -6px #00000040;
 }
 
 .asesoramiento-wrapper > * {
   width: 100%;
+}
+
+.img-first {
+  z-index: 10;
+  position: relative;
+}
+
+.wrapper-text p {
+  margin-bottom: 1rem;
+}
+
+.title-asesoramiento {
+  color: var(--color-blue);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 /* ------------------- */
