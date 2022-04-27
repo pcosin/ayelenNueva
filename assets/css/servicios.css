@@ -1,0 +1,32 @@
+.section {
+  display: flex;
+  gap: 1rem;
+  width: min(100% - 2rem, 1440px);
+  margin: 0 auto;
+  align-items: center;
+}
+
+.section__item {
+  flex: 1;
+}
+
+.section:before {
+  content: "";
+  border: 1px solid var(--color-ligth-blue);
+  align-self: stretch;
+}
+
+.section__item--start {
+  order: -1;
+}
+
+.section-gradient {
+  background: linear-gradient(180deg, #96a3e7 0%, rgba(150, 192, 231, 0.76) 100%);
+}
+
+@media (max-width: 700px) {
+  .section {
+    align-items: center;
+    flex-direction: column;
+  }
+}

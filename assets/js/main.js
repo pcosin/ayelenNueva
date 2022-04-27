@@ -1,53 +1,90 @@
+/*==================== Nav Bar ====================*/
 
-const productos = [{
 
-    id:1,
-    nombre:"santi",
-    precio:100,
-    },{
 
-    id:2,
-    nombre:"juan",
-    precio:200,
-    },{
+const nav = document.querySelector(".primary-navigation");
+const navToggle = document.querySelector(".mobile-nav-toggle");
 
-    id:3,
-    nombre:"rosa",
-    precio:300,
+navToggle.addEventListener("click", () => {
+
+    const visiblity = nav.getAttribute("data-visible");
+    if (visiblity === "false") {
+        nav.setAttribute("data-visible", true);
+        navToggle.setAttribute("aria-expanded", true);
+    } else {
+        nav.setAttribute("data-visible", false);
+        navToggle.setAttribute("aria-expanded", false);
+    }
+})
+
+
+
+
+/*==================== SWIPER ====================*/
+
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
     },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+    autoplay: {
+        delay: 2500,
+    },
+
+    disableOnInteraction: true,
+
+});
+
+
+
+/*==================== SCROLL REVEAL ANIMATION ====================*/
+
+
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 2000,
+    reset: true
+});
+
+sr.reveal(`.scroll, 
+            .footer`, {
+    interval: 200
+})
+
+
+/*==================== FADE IN IMAGE ====================*/
+
+
+window.onload = fadeIn;
   
+        function fadeIn() {
+            var fade = document.getElementById("img-fade");
+            var opacity = 0;
+            var intervalID = setInterval(function() {
+  
+                if (opacity < 1) {
+                    opacity = opacity + 0.1
+                    fade.style.opacity = opacity;
+                } else {
+                    clearInterval(intervalID);
+                }
+            }, 250);
+        }
 
-];
-
-class Producto {
-    constructor(nombre, precio, id){
-    this.nombre = nombre;
-    this.precio = precio;
-    this.id = id }
-
-
-
-}
-
-
-function pedirProducto() {
-    let nombre = prompt("Ingrese su nombre");
-    let precio = prompt("Ingrese precio");
-    let id = prompt("Ingrese su ID");
-
-    let producto = new Producto(nombre, precio, id);
-    console.log(producto)
-    nuevoProducto = Object.entries(producto)
-    productos.push(nuevoProducto)
-
-    return producto;
-}
-
-pedirProducto()
-
-
-
-
-
-
-console.log(productos)
