@@ -21,7 +21,7 @@
       sizes="16x16"
       href="./assets/img/favicons/favicon-16x16.png"
     />
-
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="./assets/css/style.css" />
 
     <title>Ayelén María Gaitán - Abogada || Servicios</title>
@@ -55,12 +55,14 @@
     </header>
 
     <main>
-      <section class="hero flex-hero">
+      <section class="hero-servicios flex-hero">
         <div class="hero-inside grid-hero">
           <div class="hero-text">
             <h2 class="first-text">
               El universo jurídico es una encrucijada.<br />
               Tenés dos alternativas: seguir tu intuición…<br />
+            </h2>
+            <h2 class="first-text">
               O buscar ayuda especializada.
             </h2>
             <h2 class="second-text">
@@ -72,10 +74,10 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section scroll">
         <div class="section__item section__item--start">
-          <h3>Los emprendedores son seres excepcionales.</h3>
-          <h3>Lo puedo afirmar, porque me considero uno de ellos.</h3>
+          <div ><h4>Los emprendedores son seres<br> excepcionales.</h4>
+            <h4 class="border-bottom-after">Lo puedo afirmar, porque me<br> considero uno de ellos.</h4></div>
         </div>
 
         <div class="section__item section__item--end">
@@ -91,8 +93,10 @@
             </p>
 
             <p>
-              Esto es algo que muchas veces los emprendedores no consideran. <br /><b>¿Por qué?</b>
+              Esto es algo que muchas veces los emprendedores no consideran. 
             </p>
+
+            <p class="strong">¿Por qué?</p>
 
             <p>Por simple desconocimiento, falta de recursos o tiempo.</p>
 
@@ -136,24 +140,27 @@
               <li>Contratos civiles y comerciales.</li>
             </ul>
 
-            <h4 class="destacados color-dark-blue">
-              Asisto a emprendedores desde el punto de partida y los acompaño continuamente,
+            <h4 class="strong">
+              Asisto a emprendedores y empresas desde el punto de partida y los acompaño continuamente,
               garantizando una estructura jurídica protegida y sostenible.
             </h4>
 
-            <div class="boton text-center">
-              <a href="contacto.html" class="btn-servicios btn-sub-360-servicios"
-                >Necesito asesoramiento</a
+            <div class="boton boton-service">
+              <button href="contacto.html" class="btn"
+                >Necesito asesoramiento</
               >
             </div>
           </div>
         </div>
       </section>
-      <section class="section section-gradient">
+      <section class="gradient-wrapper">
+      <section class="section section-gradient scroll">
         <div class="section__item section__item--start">
-          <h3>Realizar un trámite parece algo sencillo.</h3>
-          <h3>Sin embargo, existen cientos de obstáculos y trabas administrativas capaces de sacarle
-            el aliento y la energía a más de uno.</h3>
+          <div>
+            <h4 class="border-bottom-after">Realizar un trámite parece<br> algo sencillo.<br>
+          Sin embargo, existen cientos<br> de obstáculos y trabas<br> administrativas capaces de<br> sacarle
+            el aliento y la energía a<br> más de uno.</h4>
+          </div>
         </div>
 
         <div class="section__item section__item--end">
@@ -177,13 +184,12 @@
             Es por eso que mis servicios son de gran utilidad para cientos de empresas y negocios.
           </p>
           <p>
-            <b
-              >Me encargo de la gestión integral de todos los trámites de tu empresa ante estos
+            Me encargo de la gestión integral de todos los trámites de tu empresa ante estos
               organismos:
-            </b>
+            
           </p>
           <ul class="ul-punto">
-            <li><b>Registro Público</b></li>
+            <li>Registro Público</li>
           </ul>
           <p>
             Inscripción y registro de sociedades comerciales en general (sociedades anónimas, por
@@ -198,7 +204,7 @@
             <li>Disolución</li>
           </ul>
           <ul class="ul-punto">
-            <li><b>Inspección General de Personas Jurídicas</b></li>
+            <li>Inspección General de Personas Jurídicas</li>
           </ul>
           <p>
             Otorgamiento de personerías jurídicas a asociaciones civiles y fundaciones;
@@ -214,18 +220,22 @@
             <li>Extinción</li>
           </ul>
 
-          <h4 class="destacados color-dark-blue">
+          <p>
             Siento decirlo, pero este tipo de diligencias acompañan de por vida cualquier actividad
             comercial, no importa si estás empezando o sos la empresa más importante.
-          </h4>
-          <div class="boton text-center">
-            <a href="contacto.html" class="btn-servicios btn-sub-360-servicios"
-              >Necesito gestión de trámites</a
+          </p>
+
+          <p class="strong">
+            Asisto a emprendedores y empresas desde el punto de partida y los acompaño continuamente, garantizando una estructura jurídica protegida y sostenible.
+          </p>
+          <div class="boton boton-service">
+            <button href="contacto.html" class="btn"
+              >Necesito gestión de trámites</
             >
           </div>
         </div>
       </section>
-
+    </section>
     
       <footer>
         <div class="footer-wrapper">
@@ -240,6 +250,8 @@
           </div>
         </div>
       </footer>
+      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+      <script src="https://unpkg.com/scrollreveal"></script>
       <script src="./assets/js/main.js"></script>
     </main>
   </body>

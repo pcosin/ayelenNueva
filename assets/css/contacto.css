@@ -1,5 +1,9 @@
 .hero-contact {
+  margin-top: 5rem;
   background-image: url(../img/contacto-header.png);
+  background-repeat: no-repeat;
+  height: 500px;
+  background-size: cover;
 }
 
 .contact-text {
@@ -8,6 +12,7 @@
 
 .contact-wrapper {
   width: min(100% - 2rem, 1440px);
+  margin: 0 auto;
 }
 
 .contact-wrapper-text h3 {
@@ -19,18 +24,60 @@
   margin-bottom: 1.5rem;
 }
 
+.border-bottom-contact {
+  position: relative;
+}
+
+.border-bottom-contact:after {
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid var(--color-blue);
+  width: 20%;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+}
+
 /* ------------------- */
 /* Form   */
 /* ------------------- */
 
+.flex-column {
+  display: flex;
+}
+
 .section-form {
   display: flex;
   justify-content: center;
+  margin-top: 6rem;
 }
 
 .contactoForm {
   background-color: var(--color-blue);
-  width: min(100% - 2rem, 800px);
+  width: min(100% - 2rem, 700px);
+  padding-block: 0.5rem;
+}
+
+.contactoInput {
+  padding: 1rem;
+}
+
+.contactoInput label,
+textarea {
+  color: #fff;
+  /* padding-inline: 1rem; */
+  width: 40%;
+}
+
+.contactoInput input,
+textarea {
+  width: 100%;
+  padding-block: 0.5rem;
+}
+
+.contactoInput textarea {
+  height: 200px;
 }
 
 #mensajeValido {
@@ -44,4 +91,9 @@
   text-align: center;
   color: rgb(165, 32, 32);
   margin-bottom: 1rem;
+}
+
+.social {
+  justify-content: center;
+  margin-top: 2rem;
 }
