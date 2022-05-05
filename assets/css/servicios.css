@@ -98,8 +98,46 @@
     flex-direction: column;
   }
 
+  .section::before {
+    display: none;
+  }
+
   .section-gradient {
     align-items: center;
     flex-direction: column;
   }
+
+  .border-bottom-after::after {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .hero-servicios .grid-hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-servicios h2 {
+    text-align: center;
+  }
+
+  .hero-servicios .hero-text::before {
+    display: none;
+  }
+  .boton-service {
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-servicios .first-text {
+    font-size: 1.6rem !important;
+  }
+
+  .hero-servicios .second-text {
+    font-size: 1.3rem !important;
+  }
+
+  .section__item--start h4 {
+   
+    font-size: 1.4rem;
+   
 }

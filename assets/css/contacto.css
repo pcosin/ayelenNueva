@@ -6,6 +6,12 @@
   background-size: cover;
 }
 
+.first-text-contact {
+  font-size: clamp(2.1rem, 5vw, 4rem);
+  margin-bottom: 1rem;
+  color: var(--color-ligth-blue);
+}
+
 .contact-text {
   margin-block: 3rem;
 }
@@ -96,4 +102,17 @@ textarea {
 .social {
   justify-content: center;
   margin-top: 2rem;
+}
+
+@media (max-width: 650px) {
+  .hero-contact .grid-hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-contact h2 {
+    text-align: center;
+  }
+
+  .hero-contact .hero-text::before {
+    display: none;
+  }
 }
