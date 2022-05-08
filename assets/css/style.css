@@ -689,7 +689,7 @@ select {
 
 .cards-slider {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 4rem;
@@ -844,13 +844,64 @@ select {
 }
 
 @media (max-width: 700px) {
-  .asesoramiento-wrapper .flex {
+  .section-asesoramiento .flex {
     flex-direction: column;
     text-align: center;
   }
+  .section-margin .flex {
+    flex-direction: column-reverse;
+  }
+  .shadow,
+  .shadow-2,
+  .separator,
+  .separator-2,
+  .shadow-second-bottom,
+  .shadow-second-top {
+    display: none;
+  }
+
+  .grey-box {
+    width: min(90%);
+  }
+
+  .wrapper-text {
+    padding-inline: 0.5rem;
+  }
 }
 
-@media (min-width: 630px) {
-  body {
+@media (max-width: 610px) {
+  .grid-hero {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .hero-text h2 {
+    text-align: center;
+  }
+
+  .hero-text::before {
+    display: none;
+  }
+  .first-text {
+    font-size: 1.7rem !important;
+  }
+
+  .second-text {
+    font-size: 1.3rem !important;
+  }
+
+  .hero-img {
+    /* display: none; */
+    max-width: 100px;
+  }
+
+  .blue-title-wrapper h3,
+  .blue-title-wrapper-conversemos h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .grey-box {
+    margin-top: -15px;
   }
 }
