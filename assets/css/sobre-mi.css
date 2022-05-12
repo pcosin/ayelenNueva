@@ -10,6 +10,7 @@
 #image {
   max-width: 31%;
   position: fixed;
+  top: 15%;
   right: 10%;
   animation-duration: 1s;
   animation-timing-function: linear;
@@ -17,7 +18,7 @@
   animation-iteration-count: 1;
   animation-fill-mode: both;
   animation-name: move;
-  overflow: hidden;
+  object-position: 50% 50%;
 }
 
 @-webkit-keyframes move {
@@ -74,4 +75,14 @@
 
 .sobre-purple-shadow p {
   color: #fff;
+}
+
+@media (max-width: 800px) {
+  .grid-hero-sobre {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  #image {
+    position: relative;
+  }
 }
