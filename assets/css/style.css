@@ -983,6 +983,9 @@ select {
   .hero {
     height: 600px;
   }
+  .footer-politica {
+    text-align: center;
+  }
 }
 
 @media (min-width: 1500px) {

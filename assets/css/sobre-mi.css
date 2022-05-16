@@ -21,6 +21,10 @@
   object-position: 50% 50%;
 }
 
+.position {
+  top: 500px;
+}
+
 @-webkit-keyframes move {
   0% {
     transform: translateY(0);
