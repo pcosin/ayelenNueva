@@ -89,10 +89,11 @@ window.onload = fadeIn;
         }
 
 
-        // Preloader
+// Preloader
  window.addEventListener("load", () => {
     document.querySelector(".preloader").classList.add("fade-out");
     setTimeout(() => {
         document.querySelector(".preloader").style.display = "none";
-    }, 600)
+        console.log("hola")
+    }, 700)
 })
