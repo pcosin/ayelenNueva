@@ -31,6 +31,15 @@
     <title>Ayelén María Gaitán - Abogada</title>
   </head>
   <body>
+    <!-- preloader start -->
+    <div class="preloader">
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- preloader end -->
     <header class="primary-header">
       <div class="nav-wrapper flex">
         <div class="logo">
@@ -74,7 +83,10 @@
             </h2>
           </div>
           <div class="hero-img">
-            <img id="img-fade" src="./assets/img/logoWhite.webp" alt="logo en blanco" />
+            <picture>
+              <source srcset="./assets/img/logoWhite.webp" type="image/webp" />
+              <img id="img-fade" src="./assets/img/logoWhite.png" alt="logo en blanco" />
+            </picture>
           </div>
         </div>
       </section>
