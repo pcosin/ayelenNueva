@@ -95,5 +95,7 @@ window.onload = fadeIn;
     setTimeout(() => {
         document.querySelector(".preloader").style.display = "none";
         console.log("hola")
-    }, 700)
+    }, 3000)
 })
+
+
