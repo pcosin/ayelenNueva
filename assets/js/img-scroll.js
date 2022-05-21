@@ -22,18 +22,19 @@ let rellax = new Rellax('.rellax', {
   });
 
 
-var socialFloat = document.querySelector('.rellax');
-var footer = document.querySelector('#before-footer');
+let socialFloat = document.querySelector('.rellax');
+let footer = document.querySelector('#before-footer');
 
 function checkOffset() {
   function getRectTop(el){
-    var rect = el.getBoundingClientRect();
+    let rect = el.getBoundingClientRect();
     return rect.top;
   }
   
   if((getRectTop(socialFloat) + document.body.scrollTop) + socialFloat.offsetHeight >= (getRectTop(footer) + document.body.scrollTop) - 100)
     socialFloat.style.position = 'absolute';
-    socialFloat.classList.add('position')
+    socialFloat.style.bottom = '100px';
+
   if(document.body.scrollTop + window.innerHeight < (getRectTop(footer) + document.body.scrollTop))
     socialFloat.style.position = 'fixed'; // restore when you scroll up
   
@@ -46,19 +47,6 @@ document.addEventListener("scroll", function(){
 
 
 
-
-
-// function checkOffset() {
-//     var a=$(document).scrollTop()+window.innerHeight;
-//     var b=$('#section').offset().top;
-//     if (a<b) {
-//       $('#image').css('bottom', '100px');
-//     } else {
-//       $('#image').css('bottom', (500+(a-b))+'px');
-//     }
-//   }
-//   $(document).ready(checkOffset);
-//   $(document).scroll(checkOffset);
 
 
 

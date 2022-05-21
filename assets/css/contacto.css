@@ -7,7 +7,7 @@
 }
 
 .first-text-contact {
-  font-size: clamp(2.1rem, 5vw, 4rem);
+  font-size: clamp(2.1rem, 3vw, 4rem);
   margin-bottom: 1rem;
   color: var(--color-ligth-blue);
 }
@@ -55,7 +55,9 @@
 
 .section-form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: 6rem;
 }
 
@@ -84,19 +86,32 @@ textarea {
 
 .contactoInput textarea {
   height: 200px;
+  color: #333;
 }
 
 #mensajeValido {
   display: none;
   text-align: center;
-  color: var(--color-dark-blue);
+  color: rgb(113, 175, 21);
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 #mensajeInvalido {
   display: none;
   text-align: center;
   color: rgb(165, 32, 32);
+  margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.valido input {
+  border: 1px solid;
+  border-color: rgb(113, 175, 21);
+}
+
+.invalido input {
+  border: 1px solid;
+  border-color: rgb(165, 32, 32);
 }
 
 .social {

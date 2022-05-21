@@ -1065,7 +1065,7 @@ select {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 380px) {
   .hero {
     height: 600px;
   }

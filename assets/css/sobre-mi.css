@@ -89,4 +89,8 @@
   #image {
     display: none;
   }
+
+  .btn-contactame {
+    padding-top: 0px !important;
+  }
 }
