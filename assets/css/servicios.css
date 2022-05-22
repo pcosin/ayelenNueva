@@ -3,8 +3,43 @@
 /* ------------------- */
 
 .ul-punto {
-  list-style-type: disc;
+  list-style-type: none;
   color: var(--color-blue);
+  position: relative;
+}
+
+.ul-punto2 li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 5px;
+  display: inline-block;
+  background-color: var(--color-blue);
+  vertical-align: middle;
+}
+
+.ul-punto li:before {
+  content: "";
+  left: 30px;
+  bottom: 7px;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-blue);
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.ul-flecha {
+  list-style-type: none;
+  color: var(--color-blue);
+  position: relative;
+}
+
+.ul-flecha li:before {
+  content: "\00BB";
+  margin-right: 0.5rem;
 }
 
 .boton-service {

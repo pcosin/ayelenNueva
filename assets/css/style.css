@@ -159,7 +159,6 @@ select {
 .btn {
   font-size: 1.25rem;
   font-weight: 700;
-  text-transform: uppercase;
   background-color: var(--color-blue);
   color: #fff;
   padding: 0.6rem 1.1rem;
