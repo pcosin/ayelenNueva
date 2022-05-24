@@ -10,6 +10,13 @@
 }
 
 @font-face {
+  font-family: "Sedan Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/sedan-sc/Sedan-Regular.ttf") format("woff");
+}
+
+@font-face {
   font-family: "Open-Sans";
   font-style: normal;
   font-weight: normal, 700;
@@ -432,7 +439,7 @@ select {
 .hero-text {
   padding: 1rem;
   position: relative;
-  font-family: "Sedan SC Regular";
+  font-family: "Sedan Regular";
 }
 
 .hero-text::before {
