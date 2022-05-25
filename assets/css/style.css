@@ -566,8 +566,8 @@ select {
 }
 .blue-title-wrapper h3 {
   color: #fff;
-  text-transform: uppercase;
-  font-family: "Sedan SC Regular";
+
+  font-family: "Sedan Regular";
   line-height: 40px;
   font-size: 1.6rem;
   text-align: center;
@@ -698,7 +698,7 @@ select {
 
 .wrapper-text ul {
   list-style-type: disc;
-  margin-left: -25px;
+  margin-left: 15px;
 }
 
 .title-asesoramiento {
@@ -849,8 +849,8 @@ select {
 }
 .blue-title-wrapper-conversemos h3 {
   color: #fff;
-  text-transform: uppercase;
-  font-family: "Sedan SC Regular";
+
+  font-family: "Sedan Regular";
   line-height: 40px;
   font-size: 1.6rem;
   text-align: center;
