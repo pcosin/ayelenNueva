@@ -4,7 +4,8 @@
   grid-column-gap: 10px;
 }
 
-.img-sobre {
+.picture-sobre-mi {
+  display: none;
 }
 
 #image {
@@ -93,5 +94,11 @@
 
   .btn-contactame {
     padding-top: 0px !important;
+  }
+
+  .picture-sobre-mi {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
   }
 }

@@ -119,6 +119,12 @@ textarea {
   margin-top: 2rem;
 }
 
+@media (max-width: 800px) {
+  .main-contacto > .hero {
+    height: 500px;
+  }
+}
+
 @media (max-width: 650px) {
   .hero-contact .grid-hero {
     grid-template-columns: 1fr;
