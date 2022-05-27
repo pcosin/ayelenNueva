@@ -4,6 +4,7 @@ let rellax = new Rellax(".rellax", {
 
 let socialFloat = document.querySelector("#image");
 let footer = document.querySelector("#before-footer");
+const mediaQuery = window.matchMedia("(max-width: 1300px)");
 
 function checkOffset() {
   function getRectTop(el) {
@@ -16,7 +17,10 @@ function checkOffset() {
     getRectTop(footer) + document.body.scrollTop - 100
   ) {
     socialFloat.style.position = "absolute";
-    socialFloat.style.top = "1910px";
+    socialFloat.style.top = "1810px";
+    if (mediaQuery.matches) {
+      socialFloat.style.top = "1910px";
+    }
   }
   if (document.body.scrollTop + window.innerHeight < getRectTop(footer) + document.body.scrollTop) {
     socialFloat.style.position = "fixed"; // restore when you scroll up
