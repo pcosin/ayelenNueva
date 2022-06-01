@@ -17,9 +17,9 @@ function checkOffset() {
     getRectTop(footer) + document.body.scrollTop - 100
   ) {
     socialFloat.style.position = "absolute";
-    socialFloat.style.top = "1810px";
+    socialFloat.style.top = "1710px";
     if (mediaQuery.matches) {
-      socialFloat.style.top = "1910px";
+      socialFloat.style.top = "1950px";
     }
   }
   if (document.body.scrollTop + window.innerHeight < getRectTop(footer) + document.body.scrollTop) {
