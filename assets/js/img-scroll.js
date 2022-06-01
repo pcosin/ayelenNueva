@@ -17,7 +17,7 @@ function checkOffset() {
     getRectTop(footer) + document.body.scrollTop - 100
   ) {
     socialFloat.style.position = "absolute";
-    socialFloat.style.top = "1710px";
+    socialFloat.style.top = "1510px";
     if (mediaQuery.matches) {
       socialFloat.style.top = "1950px";
     }
