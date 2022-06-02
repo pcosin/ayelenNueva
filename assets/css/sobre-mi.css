@@ -92,6 +92,10 @@
     display: none;
   }
 
+  #section {
+    padding-bottom: 1rem;
+  }
+
   .btn-contactame {
     padding-top: 0px !important;
   }
